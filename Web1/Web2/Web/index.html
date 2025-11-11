@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задание №1</title>
+    <title>Задание №1-3</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-        <div>
-            <ul>
+    
+    <header class="head">
+
+        <div class="head-wrapper">
+
+            <div class="head-left">
+
+                <div class="head-logo"><i class="fa-solid fa-folder-open head-logo-img"></i><img src="image.jpg" alt="Логотип" class = "head-logo-img"></div>
+
+                <div class="head-title"><h3 class="head-h3">Задание №1-3</h3></div>
+
+            </div>
+            
+        <nav class="head-nav">
+
+            <a href="#main" class="head-nav-a">Ссылки</a>
+
+            <a href="#table" class="head-nav-a">Таблица</a>
+
+            <a href="#form" class="head-nav-a">Форма</a>
+
+        </nav>
+
+
+        </div>
+
+    </header>
+
+<div class = "flex">
+    <section class="main" id="main">
+        <h3>Ссылки</h3>
+        <div class="main-wrapper">
+            <ul class="main-ul">
                 <li><a href="http://www.kubsu.ru/">1. Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
                 <li><a href="https://www.kubsu.ru/">2. Абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
                 <li><a>3. Ссылка-изображение</a></li>
@@ -44,65 +75,164 @@
                     </ol>
                 <li><a href="ftp://user:password@ftp.example.com/file.txt">21. Cсылка на файл на сервере FTP с авторизацией</a></li>
             </ul>
-<section id="форма">
-  <form action="/"
-      method="POST">
-         <label>
-        ФИО:<br />
-        <input name="vvodfio"
-          type="fio"
-          placeholder="Введите ваше ФИО" required>
-      </label><br />
-      Телефон:<br />
-        <input name="vvodtel"
-          type="tel"
-          placeholder="Введите ваш телефон" required>
-      </label><br />
-       e-mail:<br />
-        <input name="field-email"
-          type="email"
-          placeholder="Введите ваш e-mail" required>
-      </label><br />
-        <label>
-        Введите дату:<br />
-        <input name="field-date"
-          type="date" required>
-      </label><br />
-      Выберите пол:<br />
-      <label><input type="radio"
-        name="radio-group-1" value="Ж" required>
-        Ж</label>
-      <label><input type="radio"
-        name="radio-group-1" value="М" required>
-        М</label><br />
-        <label>
-        Выберите любимый язык программирования:
-        <br />
-        <select name="field-name-4[]"
-          multiple="multiple" required>
-          <option value="1">Pascal</option>
-          <option value="2" >C</option>
-          <option value="3" >C++</option>
-           <option value="4">JavaScript</option>
-          <option value="5" >PHP</option>
-          <option value="6" >Python</option>
-          <option value="7">Java</option>
-          <option value="8" >Hasckel</option>
-          <option value="9" >Clojure</option>
-           <option value="10">Prolog</option>
-          <option value="11" >Scala</option>
-         required</select>
-      </label><br />
-      <label>
-        Ваша биография:<br />
-        <textarea name="field-name-2" placeholder="Введите текст" required></textarea>
-      </label> <br />
-      <br />
-      <label> С условиями ознакомлен: <input type="checkbox" 
-        name="check-1" required/>
-         </label><br />
-<br /><input type="submit" value="Сохранить" ><br />
-</form>
-        </section>
+        </div>
+    </section>
+
+    <section class="table" id="table">
+<h3>Таблица</h3>
+        <div class="table-wrapper">
+
+            <table class="table-main">
+                <tr class="table-str">
+
+                    <th colspan="5" class="tabel-title" style="text-align: center; background-color: #837f82">РАСПИСАНИЕ</th>
+
+                </tr>
+
+                <tr class="table-str">
+
+                    <th class="table-content"></th>
+
+                    <th class="table-content">ПМ21/1</th>
+
+                    <th class="table-content">ПМ21/2</th>
+
+                    <th class="table-content">ПМ22/1</th>
+                    
+                    <th class="table-content">ПМ22/2</th>
+
+                </tr>
+
+                <tr  class="table-str">
+
+                    <th class="table-content tabel-chet">время занятий</th>
+
+                    <th colspan="4" class="table-content tabel-chet"></th>
+                </tr>
+
+
+                <tr class="table-str">
+
+                    <td class="table-content">11:10-12:30</td>
+
+                    <td class="table-content">Матан</td>
+
+                    <td class="table-content">ООП</td>
+
+                    <td class="table-content"></td>
+
+                    <td class="table-content"></td>
+
+                </tr>
+
+                <tr class="table-str">
+
+                   <td class="table-content tabel-chet">12:40-14:00</td>
+
+                    <td class="table-content tabel-chet">WEB</td>
+
+                    <td class="table-content tabel-chet">Матан</td>
+
+                    <td class="table-content tabel-chet">Английский</td>
+
+                    <td class="table-content tabel-chet"></td>
+
+                </tr>
+                
+                <tr class="table-str">
+
+                    <td class="table-content">14:10-15:30</td>
+
+                    <td class="table-content" colspan="4" style="text-align: center;">Матан лекция</td>
+
+                </tr>
+
+                <tr class="table-str">
+
+                   <td class="table-content tabel-chet">15:40-17:00</td>
+
+                    <td class="table-content tabel-chet" colspan="4" style="text-align: center;">WEB лекция</td>
+
+                </tr>
+                
+                <tr class="table-str">
+
+                    <td class="table-content">17:10-18:30</td>
+
+                    <td class="table-content"></td>
+
+                    <td class="table-content"></td>
+
+                    <td class="table-content">WEB</td>
+
+                    <td class="table-content">Матан</td>
+
+                </tr>
+                
+            </table>
+
+        </div>
+
+    </section>
+    
+</div>
+
+    <section class="form" id="form">
+        <h3>Форма</h3>
+        <div class="form-wrapper">
+            <form action="#" class="form-main">
+                <label for="fio" class="form-label">Ваше Фио:</label>
+                <input type="text" id="fio" name="fio" class="form-inp" required>
+                <label for="tel-num" class="form-label">Ваш номер телефона:</label>
+                <input type="tel" id="tel-num" name="tel-num" class="form-inp" required>
+                <label for="mail" class="form-label">Ваш e-mail:</label>
+                <input type="email" id="mail" name="mail" class="form-inp" required>
+                <label for="date" class="form-label">Ваша дата рождения:</label>
+                <input type="date" id="date" name="date" class="form-inp" required>
+                <label for="gender" class="form-label">Ваш пол:</label>
+                <div class="form-block">
+                    <input type="radio" id="male" name="gender" value="male" class="form-inp form-rad" required>
+                    <label for="male" class="form-label">Мужской</label>
+                </div>
+                <div class="form-block">
+                    <input type="radio" id="female" name="gender" value="female" class="form-inp form-rad" required>
+                    <label for="female" class="form-label">Женский</label>
+                </div>
+                <label for="prog-lang" class="form-label">Ваш любимый язык програмирования:</label>
+                <select name="prog-lang" id="prog-lang" class="form-select" required>
+                    <option value="pas" class="form-option">Pascal</option>
+                    <option value="c" class="form-option">C</option>
+                    <option value="cpp" class="form-option">C++</option>
+                    <option value="js" class="form-option">JavaScript</option>
+                    <option value="php" class="form-option">PHP</option>
+                    <option value="py" class="form-option">Python</option>
+                    <option value="java" class="form-option">Java</option>
+                    <option value="hask" class="form-option">Haskel</option>
+                    <option value="clo" class="form-option">Clojure</option>
+                    <option value="pro" class="form-option">Prolog</option>
+                    <option value="sca" class="form-option">Scala</option>
+                </select>
+                <label for="bio" class="form-label">Ваша биография:</label>
+                <textarea id="bio" name="bio" rows="5" class="form-textarea" required></textarea>
+                <div class="form-block">
+                    <input type="checkbox" id="agreement" name="agreement" class="form-chek" required>
+                    <label for="agreement" class="form-label">С пользовательским соглашением ознакомлен(а)</label>
+                </div>
+                <button type="submit" class="form-but">Сохранить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-wrapper">
+
+            <p class="footer-cop">(с) Алборова Полина</p>
+
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
