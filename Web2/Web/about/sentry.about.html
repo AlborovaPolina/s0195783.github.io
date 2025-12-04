@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./style3.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <main>
+
+        <section class="calc">
+
+            <h1 class="title">Калькулятор стоимости репетиторства</h1>
+
+            <form action="#" class="form">
+
+                
+                <div class="form-up">
+
+                    <input type="text" id="form-kol-vo" class="form-kol-vo" placeholder=" Введите количество занятий" required>
+
+                    <label><input type="radio" name="type" value="2" class="form-rad" id="form-rad"> Занятие 20 минут  - 500₽ </label>
+
+                    <label><input type="radio" name="type" value="3" class="form-rad" id="form-rad"> Занятие 1 час - 1500₽ </label>
+
+                    <label><input type="radio" name="type" value="1" class="form-rad" id="form-rad"> Занятие 1 час 40 минут - 2500₽ </label>
+
+
+                    <select name="type-of-prod" id="type-of-prod" class="form-sel" title="type-of-prod">
+
+                        <option value="0" class="fprm-sel-opt">Дополнения</option>
+
+                        <option value="500" class="fprm-sel-opt"> +20 минут занятия (+500₽) </option>
+
+                        <option value="1000" class="fprm-sel-opt"> +40 минут занятия (+1000₽) </option>
+
+                    </select>
+
+                    <label class="form-chek" id="form-chek"><input type="checkbox"> Цифровая лекция по изученному материалу и шпаргалка (+1000₽) </label>
+
+                </div>
+                
+            </form>
+
+            <div class="calc-output">
+
+                <h4 class="price-title">Вывод</h4>
+
+                <p class="price" id="price"></p>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+</body>
+</html>

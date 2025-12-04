@@ -1,0 +1,91 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+main
+{
+    width: 100%;
+    max-width: 900px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.calc
+{
+    margin-top: 35px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0000001a;
+    background-color: #585858;
+}
+
+.title
+{
+    width: 100%;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.form
+{
+    margin-bottom: 20px;
+}
+
+.form-kol-vo
+{
+    width: 33%;
+    height: 20px;
+}
+
+.form-sel
+{
+    width: 33%;
+    height: 24px;
+    display: none;
+}
+
+.form-up
+{
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.form-chek
+{
+    display: none;
+}
+
+.price-title
+{
+    margin-bottom: 15px;
+    width: auto;
+    color:rgb(255, 255, 255);
+}
+
+@media(max-width: 461px)
+{
+    .calc
+    {
+        height: 350px;
+    }
+}

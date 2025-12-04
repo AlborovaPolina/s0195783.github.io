@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="./style2.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+
+    <main>
+
+        <section class="calc">
+
+            <h1 class="title">Калькулятор стоимости заказа</h1>
+
+            <form action="#" class="form">
+
+                <div class="form-up">
+
+                    <input type="text" id="form-kol-vo" class="form-kol-vo" placeholder="Введите количество товара" required>
+
+                    <select name="type-of-prod" id="type-of-prod" class="form-sel" title="type-of-prod">
+
+                        <option value="5" class="fprm-sel-opt">ручка - 5 ₽</option>
+
+                        <option value="7" class="fprm-sel-opt">карандаш - 7 ₽</option>
+
+                        <option value="30" class="fprm-sel-opt">стирательная резинка - 30 ₽</option>
+
+                        <option value="110" class="fprm-sel-opt">пенал - 110 ₽</option>
+
+                    </select>
+
+                </div>
+                
+                <div class="form-down">
+
+                    <button class="form-calc-but" type="button" id = "calc-but" onclick="return click1()">Подсчитать</button>
+                    
+                </div>
+                
+            </form>
+
+            <h4 class="price-title">Вывод</h4>
+
+            <p class="price" id="price"></p>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

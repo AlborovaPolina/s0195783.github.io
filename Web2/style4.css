@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+
+.slick {
+  max-width: 900px;
+  width: 100%;
+  background: #585858;
+  box-shadow: 0 2px 8px #fafafa;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slick-h {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+
+.slick-body {
+  width: 94%;
+}
+
+.slick-slide {
+  padding: 0 10px; /* создаем пространство между слайдами */
+  box-sizing: border-box;
+}
+
+.slick-img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Центрируем точки и стрелки */
+.slick-dots {
+  bottom: -30px;
+}
+.slick-prev:before, .slick-next:before {
+  color: #ffffff !important;
+}
+
+/* 📱 Адаптация под мобильные */
+@media (max-width: 940px) {
+  .slick {
+    max-width: calc(100% - 40px);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .slick-h {
+    font-size: 20px;
+  }
+
+  .slick-img {
+    height: 250px;
+  }
+}

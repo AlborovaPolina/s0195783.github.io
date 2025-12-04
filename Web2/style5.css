@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#openForm {
+    padding: 10px 20px;
+    border: none;
+    background: #585858;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#overlay.hidden {
+    display: none;
+}
+
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.popup h2 {
+    margin-bottom: 15px;
+}
+
+.popup input,
+.popup textarea {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.agree {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 30px;
+    width: 100%;
+}
+
+.agree input{
+    width: 20px;
+}
+
+.popup button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #4a8bfd;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
